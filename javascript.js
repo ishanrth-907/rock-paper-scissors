@@ -15,4 +15,3 @@ function getHumanChoice() {
     let humanChoice = prompt("Enter your choice (rock/paper/scissor)");
     return humanChoice;
 }
-console.log(getHumanChoice());
