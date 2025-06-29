@@ -48,8 +48,18 @@ function playRound(humanChoice, computerChoice) {
         computerScore++;
     }
 }
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
 
-playRound(humanSelection, computerSelection);
+function playGame() {
+    let humanSelection;
+    let computerSelection;
+    for (let i = 0; i < 5; i++) {
+        humanSelection = getHumanChoice();
+        computerSelection = getComputerChoice();
+        playRound(humanSelection, computerSelection);
+        console.log(`Current Scores`);
+        console.log(`Computer : ${computerScore}`);
+        console.log(`Player : ${humanScore}`);
+    }
 
+}
+playGame();
